@@ -1,7 +1,3 @@
-body{
-  font-family: 'Ubuntu', sans-serif;
-}
-
 
 .dropdown-toggle::after {
   display: none !important;
@@ -18,16 +14,28 @@ a:link, a:visited,  a:hover, a:active{
     color: inherit !important;
 }
 
-.topColor{
-  background: black; 
-  color:white;
-}
-
-.templateColor, .templateColor:hover, a.templateColor{
-  background: #fb2020 !important; 
-  color:white !important;
-}
-
 .main-footer{
   border-top: 0 !important;
+}
+
+.text-facebook{
+  color: #3b5998 !important;
+}
+
+.text-instagram{
+  color: #e4405f !important;
+}
+
+.text-x-twitter{
+  color: #1da1f2 !important;
+}
+
+.text-linkedin{
+  color: #0077b5 !important;
+}
+.text-youtube{
+  color: #cd201f !important;
+}
+.text-twitch{
+  color: #6441a5 !important;
 }

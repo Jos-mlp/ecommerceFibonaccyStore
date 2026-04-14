@@ -8,8 +8,9 @@
       
       <div class="d-flex justify-content-center">
         
-        <a href="<?php echo $path ?>views/assets/js/index3.html" class="navbar-brand">
-          <img src="<?php echo $path ?>views/assets/img/template/logo-letras-rojo.jpg" class="brand-image img-fluid py-3 px-5 p-lg-0 pe-lg-3">
+        <a href="<?php echo $path ?>" class="navbar-brand">
+          <img src="<?php echo $path ?>views/assets/img/template/<?php echo $template->id_template ?>/<?php echo $template->logo_template ?>" 
+          class="brand-image img-fluid py-3 px-5 p-lg-0 pe-lg-3">
         </a>
 
       </div>
@@ -23,7 +24,8 @@
 
       <div class="dropdown px-1 float-start templateColor">
 
-        <a id="dropdownSubMenu1" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle text-uppercase">
+        <a id="dropdownSubMenu1" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
+        class="nav-link dropdown-toggle text-uppercase">
           <span class="d-lg-block d-none">Categorias<i class="ps-lg-2 fas fa-th-list"></i></span>
           <span class="d-lg-none d-block"><i class="fas fa-th-list"></i></span>
 

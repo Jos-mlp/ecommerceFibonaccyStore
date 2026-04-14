@@ -1,3 +1,22 @@
+<?php
+	/*=============================================
+	Datos de las redes sociales
+	=============================================*/
+
+	$url = "socials";
+	$method = "GET";
+	$fields = array();
+	$socials = CurlController::request($url, $method, $fields);
+
+	if($socials->status == 200){
+
+		$socials = $socials->results;
+	}else{
+		//redireccionar a error
+	}
+
+?>
+
 <div class="container-fluid topColor">
 	
 	<div class="container">
@@ -8,46 +27,19 @@
 				
 				<div class="d-flex justify-content-center">
 					
-					<div class="p-2">
+					<?php foreach ($socials as $key => $value): ?>
+					
+						<div class="p-2">
 						
-						<a href="https://facebook.com" target="_blank" class="text-white">
+							<a href="<?php echo $value->url_social?>" target="_blank">
+								
+								<i class="<?php echo $value->icon_social?> <?php echo $value->color_social?>"></i>
 							
-							<i class="fab fa-facebook-f"></i>
-						
-						</a>
+							</a>
 
-					</div>
+						</div>
 
-					<div class="p-2">
-						
-						<a href="https://youtube.com" target="_blank" class="text-white">
-							
-							<i class="fab fa-youtube"></i>
-						
-						</a>
-
-					</div>
-
-					<div class="p-2">
-						
-						<a href="https://twitter.com" target="_blank" class="text-white">
-							
-							<i class="fab fa-twitter"></i>
-						
-						</a>
-
-					</div>
-
-					<div class="p-2">
-						
-						<a href="https://instagram.com" target="_blank" class="text-white">
-							
-							<i class="fab fa-instagram"></i>
-						
-						</a>
-
-					</div>
-
+					<?php endforeach ?>
 
 				</div>
 
