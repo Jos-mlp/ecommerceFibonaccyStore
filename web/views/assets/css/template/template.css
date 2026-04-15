@@ -39,3 +39,11 @@ a:link, a:visited,  a:hover, a:active{
 .text-twitch{
   color: #6441a5 !important;
 }
+
+[class*="sidebar-dark"] .sidebar a {
+  color: #c2c7d0 !important;
+}
+
+[class*="sidebar-dark"] .brand-link, [class*="sidebar-dark"] .brand-link .pushmenu {
+  color: rgba(255, 255, 255, 0.8) !important;
+}

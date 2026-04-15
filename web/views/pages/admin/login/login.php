@@ -18,7 +18,7 @@
               Correo
             </label>
             <div class="input-group">
-              <input type="email" name="email" class="form-control border-0 border-bottom" 
+              <input type="email" name="loginAdminEmail" class="form-control border-0 border-bottom" 
                      placeholder="admin@email.com" style="border-radius:0; background:#f3f3f3;">
               <div class="input-group-append">
                 <div class="input-group-text bg-transparent border-0 border-bottom">
@@ -34,7 +34,7 @@
               Contraseña
             </label>
             <div class="input-group">
-              <input type="password" name="password" class="form-control border-0 border-bottom" 
+              <input type="password" name="loginAdminPass" class="form-control border-0 border-bottom" 
                      placeholder="••••••••" style="border-radius:0; background:#f3f3f3;">
               <div class="input-group-append">
                 <div class="input-group-text bg-transparent border-0 border-bottom">
@@ -61,8 +61,12 @@
                 Ingresar →
               </button>
             </div>
+            <?php
+            require_once "controllers/admins.controller.php";
+            $login = new AdminsController();
+            $login->login();
+            ?>
           </div>
-
         </form>
 
         <div class="mt-4 text-center">
