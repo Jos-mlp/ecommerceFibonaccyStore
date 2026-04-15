@@ -1,4 +1,9 @@
 <?php
+/*=============================================
+Iniciar variables de sesión
+=============================================*/
+ob_start();
+session_start();
 
 /*=============================================
 Variable path
@@ -142,7 +147,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
   include "modules/top.php"; 
   include "modules/navbar.php"; 
-  include "modules/sidebar.php"; 
+
+  if (isset($_SESSION["admin"])) {
+    include "modules/sidebar.php"; 
+  }
+
+
 
   if (!empty($routesArray[0])) {
     if ($routesArray[0] == "admin"){
@@ -152,7 +162,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   }else{
     include "pages/home/home.php";
   }
-  
+
   include "modules/footer.php"; 
 
   ?>
