@@ -19,7 +19,7 @@
             </label>
             <div class="input-group">
               <input type="email" name="loginAdminEmail" class="form-control border-0 border-bottom" 
-                     placeholder="admin@email.com" style="border-radius:0; background:#f3f3f3;">
+                     placeholder="admin@email.com" style="border-radius:0; background:#f3f3f3;" required>
               <div class="input-group-append">
                 <div class="input-group-text bg-transparent border-0 border-bottom">
                   <span class="fas fa-envelope"></span>
@@ -35,7 +35,7 @@
             </label>
             <div class="input-group">
               <input type="password" name="loginAdminPass" class="form-control border-0 border-bottom" 
-                     placeholder="••••••••" style="border-radius:0; background:#f3f3f3;">
+                     placeholder="••••••••" style="border-radius:0; background:#f3f3f3;" required>
               <div class="input-group-append">
                 <div class="input-group-text bg-transparent border-0 border-bottom">
                   <span class="fas fa-lock"></span>

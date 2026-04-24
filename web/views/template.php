@@ -99,6 +99,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- JDSlider -->
   <link rel="stylesheet" href="<?php echo $path ?>views/assets/css/plugins/jdSlider/jdSlider.css">
 
+  <!-- Notie Alerts CSS -->
+  <link rel="stylesheet" href="<?php echo $path ?>views/assets/css/plugins/notie/notie.min.css">
+
+  <!-- Toastr Alerts CSS -->
+  <link rel="stylesheet" href="<?php echo $path ?>views/assets/css/plugins/toastr/toastr.min.css">
+
   <!-- Theme style -->
   <link rel="stylesheet" href="<?php echo $path ?>views/assets/css/plugins/adminlte/adminlte.min.css">
 
@@ -126,7 +132,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   </style>
   <!-- JS -->
 
-  <!-- jQuery -->
+  <!-- jQuery  -->
   <script src="<?php echo $path ?>views/assets/js/plugins/jquery/jquery.min.js"></script>
   <!-- Latest compiled JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -138,6 +144,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Knob -->
   <script src="<?php echo $path ?>views/assets/js/plugins/knob/knob.js"></script>
 
+  <!-- Alerts -->
+  <script src="<?php echo $path ?>views/assets/js/alerts/alert.js"></script>
+
+ <!-- Notie Alerts -->
+  <script src="<?php echo $path ?>views/assets/js/plugins/notie/notie.min.js"></script>
+
+<!--SweetAlert V2 -->
+  <script src="<?php echo $path ?>views/assets/js/plugins/sweetalert2/sweetalert2.all.min.js"></script>
+
+<!--ToastR-->
+<script src="<?php echo $path ?>views/assets/js/plugins/toastr/toastr.min.js"></script>
+  
 </head>
 
 <body class="hold-transition sidebar-collapse layout-top-nav">
